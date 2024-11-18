@@ -2,8 +2,8 @@ import 'package:get/get.dart';
 import 'package:store/consts/consts.dart';
 import 'package:store/controllers/home_controller.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class Home extends StatelessWidget {
+  const Home({super.key});
 
   @override
   Widget build(BuildContext context) {

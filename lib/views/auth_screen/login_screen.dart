@@ -37,7 +37,7 @@ class LoginScreen extends StatelessWidget {
                 child: TextButton(onPressed: (){}, child: forgetPass.text.make())),
                 5.heightBox,
                 //ourButton().box.width(context.screenWidth-50).make(),
-                ourButton(onPress: (){Get.to(()=> const HomeScreen());}, color: redColor,textColor: whiteColor, title: login ).box.width(context.screenWidth-30).make(),
+                ourButton(onPress: (){Get.to(()=> const Home());}, color: redColor,textColor: whiteColor, title: login ).box.width(context.screenWidth-30).make(),
                 5.heightBox,
                 createNewAccount.text.color(fontGrey).make(),
                 5.heightBox,
