@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:store/consts/consts.dart';
 import 'package:store/consts/lists.dart';
 import 'package:store/views/auth_screen/signup_screen.dart';
+import 'package:store/views/home_screen/home_screen.dart';
 import 'package:store/widgets_common/applogo_widget.dart';
 import 'package:store/widgets_common/bd_widget.dart';
 import 'package:store/widgets_common/custom_textfield.dart';
@@ -36,7 +37,7 @@ class LoginScreen extends StatelessWidget {
                 child: TextButton(onPressed: (){}, child: forgetPass.text.make())),
                 5.heightBox,
                 //ourButton().box.width(context.screenWidth-50).make(),
-                ourButton(onPress: (){}, color: redColor,textColor: whiteColor, title: login ).box.width(context.screenWidth-30).make(),
+                ourButton(onPress: (){Get.to(()=> const HomeScreen());}, color: redColor,textColor: whiteColor, title: login ).box.width(context.screenWidth-30).make(),
                 5.heightBox,
                 createNewAccount.text.color(fontGrey).make(),
                 5.heightBox,
