@@ -86,7 +86,7 @@ class HomeScreen extends StatelessWidget {
               
                 )),
               ),
-              10.heightBox,
+              20.heightBox,
               //featured categories
               Align(
                 alignment: Alignment.centerLeft,
