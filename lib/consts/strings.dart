@@ -18,8 +18,14 @@ const loginWith = "Log In with ";
 const privcyPolicy = "Privcy Policy";
 const termsAndConditions = "Terms & Conditions";
 const alreadyHaveAccount = "If you already have account?   ";
-//Home Screen
+//Home 
 const home ="Home";
 const categories ="Categories";
 const cart = "Cart ";
 const account = "Account";
+
+// home screen
+const searchanything = "Search Anything..." , todaydeal = "Today's Deal " , flashSale ="Flash Sale", topSellers = "Top Sellers", topcategoies = "Top Categories ", brands= "Brands", featuredcategories= "Featured Categories"; 
+
+
+//const = " ";

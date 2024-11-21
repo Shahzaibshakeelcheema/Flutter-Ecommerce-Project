@@ -1,6 +1,10 @@
 import 'package:get/get.dart';
 import 'package:store/consts/consts.dart';
 import 'package:store/controllers/home_controller.dart';
+import 'package:store/views/cart_screen/cart_screen.dart';
+import 'package:store/views/category_screen/category_screen.dart';
+import 'package:store/views/home_screen/home_screen.dart';
+import 'package:store/views/profile_screen/profile_screen.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -22,10 +26,14 @@ var controller = Get.put(HomeController());
 
 
   var navBody =[
-    Container(color: Colors.blue,),
-    Container(color: Colors.green,),
-    Container(color: Colors.yellow,),
-    Container(color: Colors.purple,),
+    // Container(color: Colors.blue,),
+    // Container(color: Colors.green,),
+    // Container(color: Colors.yellow,),
+    // Container(color: Colors.purple,),
+const HomeScreen(),
+const CategoryScreen(),
+const CartScreen(),
+const ProfileScreen()
 
 
   ];
