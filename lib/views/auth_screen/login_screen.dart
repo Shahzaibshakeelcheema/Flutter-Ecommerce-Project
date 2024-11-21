@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:store/consts/consts.dart';
 import 'package:store/consts/lists.dart';
 import 'package:store/views/auth_screen/signup_screen.dart';
-import 'package:store/views/home_screen/home_screen.dart';
+import 'package:store/views/home_screen/home.dart';
 import 'package:store/widgets_common/applogo_widget.dart';
 import 'package:store/widgets_common/bd_widget.dart';
 import 'package:store/widgets_common/custom_textfield.dart';
