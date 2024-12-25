@@ -35,3 +35,7 @@ const categoryImages = [imgFc1,imgFc2,imgFc3,imgFc4,imgFc5,imgFc6,imgFc7,imgFc8,
 
 // item Detail Buttons
 const itemDetailsButtonList = [videos,reviews,sellerPolicy,returnPolicy,supportPolicy];
+
+// Profile Screen
+const profileButtonsList = [WishList,orders,messages];
+const profileButtonsIcons = [icOrder, icOrders, icMessages];

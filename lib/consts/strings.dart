@@ -12,6 +12,7 @@ const passwordHint = "********";
 const retypePass = "Retype Password";
 const forgetPass = "Forget Password";
 const login = "Log In";
+const logout = "Log Out";
 const signUp = "Sign Up";
 const createNewAccount =" or Create a new account";
 const loginWith = "Log In with ";
@@ -38,3 +39,6 @@ const videos="Videos" , reviews ="Reviews" , sellerPolicy = "Seller Policy", ret
 
 //cart screen
 const cartIsEmpty = "Cart is Empty";
+
+//Profile Screen 
+const WishList = "My Wish List", orders = "My Orders", messages ="Messages";
