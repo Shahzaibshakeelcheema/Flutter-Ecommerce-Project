@@ -26,6 +26,6 @@ const account = "Account";
 
 // home screen
 const searchanything = "Search Anything..." , todaydeal = "Today's Deal " , flashSale ="Flash Sale", topSellers = "Top Sellers", topcategoies = "Top Categories ", brands= "Brands", featuredcategories= "Featured Categories"; 
-
-
+const womenDress = "Women Dresses ", girlWatches = "Girl Watches ", mobilePhone = "Mobile Phones", boysGlassess= "Boys Glasses ", tShirt = "T Shirts" , girlDress =" Girls Dresses";
+const featuredProduct = "Featured Product";
 //const = " ";

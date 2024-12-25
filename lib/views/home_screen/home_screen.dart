@@ -1,5 +1,6 @@
 import 'package:store/consts/consts.dart';
 import 'package:store/consts/lists.dart';
+import 'package:store/views/home_screen/components/featured_button.dart';
 import 'package:store/widgets_common/home_button.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -93,6 +94,92 @@ class HomeScreen extends StatelessWidget {
                 child: featuredcategories.text.size(18).fontFamily(semibold).color(darkFontGrey).make(),
                 
                 ),
+                20.heightBox,
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,//for making featured button scrollable
+                  child: Row(
+                    children: List.generate(3, (index)=> Column(
+                      children: [
+                        featuredbutton(icon: featuredImages1[index] , title: featuredTitles1[index]),
+                        10.heightBox,
+                        featuredbutton(icon: featuredImages2[index], title: featuredTitles2[index])
+                      ],
+                    )).toList(),
+                  ),
+                ),
+//=================================================
+                //featured products view 
+//=================================================
+                20.heightBox,
+                Container(
+                  padding: const EdgeInsets.all(12),
+                  width: double.infinity,
+                  decoration: const BoxDecoration(
+                  color: redColor,
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      featuredProduct.text.white.fontFamily(bold).size(18).make(),
+                      10.heightBox,
+                      SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          children: List.generate(6, 
+                          (index)=> Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Image.asset(imgP1,width: 150, fit: BoxFit.cover,),
+                              10.heightBox,
+                              "Laptop : 4GB/128 SSD ".text.fontFamily(semibold).color(darkFontGrey).make(),
+                              10.heightBox,
+                              "\$600".text.fontFamily(bold).size(16).color(redColor).make(),
+                            ],
+                          ).box.white.roundedSM.margin(const EdgeInsetsDirectional.symmetric(horizontal: 4)).padding(const EdgeInsets.all(8)).make()),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+      //===============================
+                //THIRD SWIPER
+    //=================================
+              20.heightBox,
+               VxSwiper.builder(
+                aspectRatio:16/9,
+                autoPlay: true,
+                height: 150,
+                enlargeCenterPage: true,
+                itemCount: secondSlidersList.length, itemBuilder: (context ,index ){
+                
+                
+                return Image.asset(secondSlidersList[index], fit:BoxFit.fill).box.rounded.clip(Clip.antiAlias).margin(const EdgeInsets.symmetric(horizontal: 8)).make(); //margin(EdgeInsets.symmetric(horizontal: 8) for adding space between
+              }),
+              20.heightBox,
+    //===============================
+                //ALL PRODUCTS
+    //================================= 
+              GridView.builder(
+                physics: const NeverScrollableScrollPhysics(),
+                shrinkWrap: true,
+                itemCount: 6,
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2 ,mainAxisSpacing: 8, crossAxisSpacing: 8,mainAxisExtent: 300), //mainAxisExtent is for height
+                itemBuilder: (context , index){
+                return Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                              Image.asset(imgP5,width: 200, height: 200, fit: BoxFit.cover,),
+                              const Spacer(),
+                              "Laptop : 4GB/128 SSD ".text.fontFamily(semibold).color(darkFontGrey).make(),
+                              10.heightBox,
+                              "\$600".text.fontFamily(bold).size(16).color(redColor).make(),
+                            ],
+                          ).box.white.roundedSM.margin(const EdgeInsetsDirectional.symmetric(horizontal: 4)).padding(const EdgeInsets.all(12)).make();
+              })
+              
+
+
               ],
              ),
            ),
