@@ -29,3 +29,9 @@ const searchanything = "Search Anything..." , todaydeal = "Today's Deal " , flas
 const womenDress = "Women Dresses ", girlWatches = "Girl Watches ", mobilePhone = "Mobile Phones", boysGlassess= "Boys Glasses ", tShirt = "T Shirts" , girlDress =" Girls Dresses";
 const featuredProduct = "Featured Product";
 //const = " ";
+
+// category screen
+const womenClothing = "Women Clothing", menClothingFashion = "Men Clothing & Fashion" , compAccess = "Computer & Accessiories " , autoMobile = " AutoMobile" , kidtoys = "Kids & Toys" , sports ="Sports " , jewellary ="Jewellary", cellPhone = "Cell Phones & Tablets" , furniture = " Furniture";
+
+//item detail screen 
+const videos="Videos" , reviews ="Reviews" , sellerPolicy = "Seller Policy", returnPolicy = "Return Policy " , supportPolicy ="Support Policy" ,productYouMayLike = "Products You May Also Like";
