@@ -35,3 +35,6 @@ const womenClothing = "Women Clothing", menClothingFashion = "Men Clothing & Fas
 
 //item detail screen 
 const videos="Videos" , reviews ="Reviews" , sellerPolicy = "Seller Policy", returnPolicy = "Return Policy " , supportPolicy ="Support Policy" ,productYouMayLike = "Products You May Also Like";
+
+//cart screen
+const cartIsEmpty = "Cart is Empty";

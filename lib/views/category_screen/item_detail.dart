@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_literals_to_create_immutables, duplicate_ignore, prefer_const_constructors, unnecessary_string_interpolations
 
 import 'package:store/consts/consts.dart';
 import 'package:store/consts/lists.dart';
