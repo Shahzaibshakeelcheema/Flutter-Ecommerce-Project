@@ -41,4 +41,4 @@ const videos="Videos" , reviews ="Reviews" , sellerPolicy = "Seller Policy", ret
 const cartIsEmpty = "Cart is Empty";
 
 //Profile Screen 
-const WishList = "My Wish List", orders = "My Orders", messages ="Messages";
+const wishList = "My Wish List", orders = "My Orders", messages ="Messages";

@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart';
+// ignore_for_file: prefer_const_constructors
+
 import 'package:store/consts/consts.dart';
 import 'package:store/consts/lists.dart';
 import 'package:store/views/profile_screen/components/details_card.dart';
@@ -69,7 +70,7 @@ class ProfileScreen extends StatelessWidget {
                 itemBuilder: (BuildContext context, int index){
                   return ListTile(
                     leading: Image.asset(profileButtonsIcons[index],width: 20,),
-                    title: "${profileButtonsList[index]}".text.fontFamily(semibold).color(darkFontGrey).make(),
+                    title: profileButtonsList[index].text.fontFamily(semibold).color(darkFontGrey).make(),
                   );
                 },
           
